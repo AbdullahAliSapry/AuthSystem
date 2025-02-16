@@ -6,8 +6,8 @@ window.addEventListener("DOMContentLoaded", () => {
     (window.location.pathname == "/Register.html" ||
       window.location.pathname == "/login.html")
   ) {
-    window.location.href = "/ProfilePage.html";
-  } else if (user == null && window.location.pathname == "/ProfilePage.html") {
+    window.location.href = "/index.html";
+  } else if (user == null && window.location.pathname == "/index.html") {
     window.location.pathname = "/login.html";
   }
 });
@@ -186,7 +186,7 @@ if (window.location.pathname == "/Register.html") {
 }
 
 if (
-  window.location.pathname == "/ProfilePage.html" ||
+  window.location.pathname == "/index.html" ||
   window.location.pathname == "/"
 ) {
   const user = JSON.parse(localStorage.getItem("user"));
